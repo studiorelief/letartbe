@@ -1,13 +1,13 @@
 {
-  "name": "@finsweet/developer-starter",
+  "name": "@studiorelief/letartbe",
   "version": "0.0.0",
-  "description": "Developer starter template for Finsweet projects.",
+  "description": "Let Art Be Web App",
   "homepage": "https://github.com/finsweet/developer-starter#readme",
   "license": "ISC",
   "keywords": [],
   "author": {
-    "name": "Finsweet",
-    "url": "https://finsweet.com/"
+    "name": "Studio Reliel",
+    "url": "https://studiorelief.fr/"
   },
   "repository": {
     "type": "git",
