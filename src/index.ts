@@ -1,9 +1,15 @@
 import './index.css';
 
-import { greetUser } from '$utils/greet';
+import { darkModeContent } from '$utils/darkmode';
+import { toggleSize } from '$utils/navbar';
+import { loadScript } from '$utils/scripts';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  const name = 'John Doe';
-  greetUser(name);
+  Promise.all([
+    loadScript('https://cdn.jsdelivr.net/npm/@finsweet/attributes-accordion@1/accordion.js'),
+  ]);
+
+  darkModeContent();
+  toggleSize();
 });
