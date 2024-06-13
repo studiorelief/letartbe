@@ -3,60 +3,61 @@
 */
 
 @media (min-width: 1301px) {
-  /* -connect button */
-  .navbar_menu-connect .navbar_icon-wrapper.is-connect {
-    display: none;
+    /* -connect button */
+    .navbar_menu-connect .navbar_icon-wrapper.is-connect {
+      display: none;
+    }
+  
+    .custom-padding {
+      padding-right: 0.3125rem !important;
+      padding-left: 0.3125rem !important;
+      padding-top: 0.3125rem !important;
+      padding-bottom: 0.3125rem !important;
+    }
+  
+    .custom-padding .navbar_icon-wrapper.is-connect {
+      display: flex;
+    }
   }
-
-  .custom-padding {
-    padding-right: 0.3125rem !important;
-    padding-left: 0.3125rem !important;
-    padding-top: 0.3125rem !important;
-    padding-bottom: 0.3125rem !important;
+  
+  @media (max-width: 1300px) and (min-width: 992px) {
+    .navbar_text,
+    .navbar_brand-logo-text {
+      display: none;
+    }
+    .navbar_container {
+      width: 2.37rem;
+    }
+    .navbar_menu-link.w--current,
+    .navbar_menu-link:hover,
+    .navbar_menu-connect.w--current,
+    .navbar_menu-connect:hover {
+      padding-right: 0.3125rem;
+      padding-left: 0.3125rem;
+    }
+  
+    .navbar_toggle-size {
+      display: none;
+    }
+  
+    .navbar_menu-connect .navbar_icon-wrapper.is-connect {
+      display: flex;
+    }
+  
+    .navbar_menu-connect {
+      padding-right: 0.3125rem !important;
+      padding-left: 0.3125rem !important;
+      padding-top: 0.3125rem !important;
+      padding-bottom: 0.3125rem !important;
+    }
+  
+    .navbar_menu-connect.custom-padding .navbar_icon-wrapper {
+      display: flex;
+    }
   }
-
-  .custom-padding .navbar_icon-wrapper.is-connect {
-    display: flex;
+  
+  /*  Dark mode icon */
+  .w-mod-js.dark-mode .navbar_icon-wrapper.is-darkmode {
+    transform: rotateZ(180deg);
   }
-}
-
-@media (max-width: 1300px) and (min-width: 992px) {
-  .navbar_text,
-  .navbar_brand-logo-text {
-    display: none;
-  }
-  .navbar_container {
-    width: 2.37rem;
-  }
-  .navbar_menu-link.w--current,
-  .navbar_menu-link:hover,
-  .navbar_menu-connect.w--current,
-  .navbar_menu-connect:hover {
-    padding-right: 0.3125rem;
-    padding-left: 0.3125rem;
-  }
-
-  .navbar_toggle-size {
-    display: none;
-  }
-
-  .navbar_menu-connect .navbar_icon-wrapper.is-connect {
-    display: flex;
-  }
-
-  .navbar_menu-connect {
-    padding-right: 0.3125rem !important;
-    padding-left: 0.3125rem !important;
-    padding-top: 0.3125rem !important;
-    padding-bottom: 0.3125rem !important;
-  }
-
-  .navbar_menu-connect.custom-padding .navbar_icon-wrapper {
-    display: flex;
-  }
-}
-
-/*  Dark mode icon */
-.w-mod-js.dark-mode .navbar_icon-wrapper.is-darkmode {
-  transform: rotateZ(180deg);
-}
+  
